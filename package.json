@@ -18,6 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/tadejstanic/rest-api-example.git"
   },
+  "keywords": ["nodejs", "rest", "api", "postgresql", "massivejs"],
   "author": "Tadej Stanic",
   "license": "ISC",
   "devDependencies": {

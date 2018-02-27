@@ -1,4 +1,4 @@
-#An example of a REST API in node.js
+# An example of a REST API in node.js
 
 The aim of this example is to present an idea of how to structure a node.js app based on [express.js](https://github.com/expressjs/express) framework in order to serve an imaginary REST API.
 
