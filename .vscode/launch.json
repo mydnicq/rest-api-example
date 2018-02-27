@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch via NPM",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run-script", "debug"],
+      "restart": true,
+      "port": 9229,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "openOnSessionStart",
+      "timeout": 2000
+    }
+  ]
+}
