@@ -15,5 +15,8 @@ export default {
   pgUserName: process.env.DB_USER_NAME || dbConfig.user,
   pgPassword: process.env.DB_PASSWORD || dbConfig.password,
   jwtSecret: process.env.JWT_SECRET || "secret",
-  jwtExpiration: process.env.JWT_EXPIRATION || 86400 // expires in 24 hours
+  jwtExpiration: process.env.JWT_EXPIRATION || 86400, // expires in 24 hours
+  // Access-Control-Allow-Origin CORS header can be string to restrict allowed origin (i.e. http://localhost:4444)
+  // or true/false to completely enable/disable CORS
+  allowOrigin: true
 };

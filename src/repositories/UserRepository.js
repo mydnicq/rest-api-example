@@ -50,9 +50,9 @@ export default class UserRepository {
       }
     );
     const users = await DB.pg.query(
-      `SELECT users.username, count(likes.*) as "countLikes" FROM users
+      `SELECT users.id, users.username, count(likes.*) as "countLikes" FROM users
       LEFT JOIN likes ON users.id = likes.user_id
-      GROUP BY users.username
+      GROUP BY users.username, users.id
       ORDER BY "countLikes" DESC
       LIMIT $1 OFFSET $2`,
       [limit, offset - 1]
